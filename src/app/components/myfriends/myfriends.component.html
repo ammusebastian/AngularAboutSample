@@ -1,0 +1,11 @@
+<h1> Friends List</h1>
+<button style="color: steelblue;" (click)="getFriends()">Show Friends</button>
+<table border="1">
+    <tr *ngFor="let f of friendsList">
+        <td> {{ f.id }} </td>
+        <td> {{ f.employee_name }} </td>
+        <td> {{ f.employee_salary }} </td>
+        <td> {{ f.employee_age }} </td>
+        <td> {{ f.profile_image }} </td>
+    </tr>
+</table>
